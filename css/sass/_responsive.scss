@@ -1,0 +1,1105 @@
+
+/////////// lg  ////////////
+@media  only screen and(min-width:769px) and(max-width:1200px) {
+
+    .name {
+        margin: 12rem;
+        margin-right: 12rem;
+    }
+    .subname {
+        margin: 19.8rem;
+        margin-right: 16rem;
+    }
+    .social-icons {
+        margin: 25rem;
+        margin-right: 18.5rem;
+    }
+    .esrafil-title{
+        margin-right: 13rem !important;
+    }
+    div{
+        @include line-title($class-name:".esrafil-title",$right:37.2%,$left:8.2%,$bg-color: $color-purple,$width:12rem);
+        .esrafil-title{
+            font-family: $font-Ferdosi;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 1.5rem !important;
+            margin-bottom: 2rem !important;
+            margin-right: 7.8rem;
+            width: 19rem;
+        }
+    }
+    .row {
+        @include line-title($class-name:".photographer-styles-title",$right:20.7%,$left:20.7%,$bg-color: $color-purple,$width:13rem);
+        .photographer-styles-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 4rem !important;
+        }
+    }
+    .row {
+        @include line-title(
+            $class-name: ".skills-title",
+            $right: 23%,
+            $left: 23%,
+            $bg-color: $color-white,
+            $width: 13rem
+        );
+        .skills-title {
+            font-family: $font-Ferdosi;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $color-white;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    .skill-container {
+        .label-two {
+            @include label-two($percent: 76%);
+        }
+        .label-three {
+            @include label-two($percent: 72%);
+        }
+        .label-four {
+            @include label-two($percent: 77%);
+        }
+        .label-five {
+            @include label-two($percent: 78%);
+        }
+        .label-six {
+            @include label-two($percent: 75.5%);
+        }
+        .label-seven {
+            @include label-two($percent: 75.8%);
+        }
+        .label-2 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-3 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-4 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-5 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-6 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-7 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+    }
+    .row {
+        @include line-title(
+            $class-name: ".work-samples-title",
+            $right: 24.7%,
+            $left: 24.7%,
+            $bg-color: $color-purple,
+            $width: 13rem
+        );
+        .work-samples-title {
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .work-samples {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        transition: 1s;
+        padding: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        transition: 0.9s;
+
+        &:hover {
+            &:after {
+                top: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            .after {
+                bottom: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            &:before {
+                left: 30px;
+                width: 84%;
+                transition: 0.9s;
+            }
+
+            .before {
+                right: 30px;
+                width: 84%;
+                transition: 0.9s;
+            }
+
+            &:before,
+            .before {
+                width: 84%;
+                transition: 0.9s;
+            }
+        }
+
+        &:after {
+            height: 80%;
+            width: 2px;
+            content: "";
+            top: 10%;
+            left: 30px;
+            transition: 0.9s;
+        }
+
+        .before,
+        .after,
+        &:before,
+        &:after {
+            background: #777;
+            position: absolute;
+            transition: 0.9s;
+        }
+
+        &:before {
+            height: 2px;
+            width: 80%;
+            content: "";
+            top: 0px;
+            left: 10%;
+            transition: 0.9s;
+        }
+
+        .before {
+            height: 2px;
+            width: 80%;
+            bottom: 0px;
+            right: 10%;
+            transition: 0.9s;
+        }
+
+        .after {
+            height: 80%;
+            width: 2px;
+            bottom: 10%;
+            right: 30px;
+            transition: 0.9s;
+        }
+    }
+    .row {
+        @include line-title($class-name:".my-experiences-title",$right:24.3%,$left:24.2%,$bg-color: $color-purple,$width:13rem);
+        .my-experiences-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .row {
+        @include line-title($class-name:".contact-us-title",$right:24.7%,$left:24.7%,$bg-color: $color-purple,$width:13rem);
+        .contact-us-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+
+}
+
+/////////// md  ////////////
+@media only screen and(min-width:577px) and(max-width:768px) {
+
+    .name {
+        margin: 10rem;
+        margin-right: 5.5rem;
+        font-size: 3.2rem;
+    }
+    .subname {
+        margin: 17rem;
+        margin-right: 10rem;
+    }
+    .social-icons {
+        margin: 21.7rem;
+        margin-right: 10.7rem;
+    }
+    .about-me-img{
+        margin-top: -2rem !important;
+        margin-right: .5rem;
+    }
+    #about-me{
+        height: 25rem;
+        .col-md-8{
+            width: 64.666667%;
+        }
+    }
+    div{
+        @include line-title($class-name:".esrafil-title",$right:45%,$left:.5%,$bg-color: $color-purple,$width:5rem);
+        .esrafil-title{
+            font-family: $font-Ferdosi;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 1.5rem !important;
+            margin-bottom: 2rem !important;
+            margin-right: 7.8rem;
+            width: 19rem;
+        }
+    }
+    .about-me-disc{
+        margin-top: -2rem !important;
+    }
+    .esrafil-desc{
+        width: 33rem;
+    }
+    .esrafil-data{
+        width: 35rem;
+    }
+    .esrafil-data-2{
+        margin-right: -1rem;
+    }
+    .esrafil-data-1{
+        margin-left: -1rem;
+    }
+    .email{
+        width: 40rem;
+    }
+    #photography-styles {
+        background-color: $color-background;
+        height: 115rem;
+    }
+    .row {
+        @include line-title($class-name:".photographer-styles-title",$right:13%,$left:13%,$bg-color: $color-purple,$width:10rem);
+        .photographer-styles-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 4rem !important;
+        }
+    }
+    .card{
+        margin: 0 auto;
+        margin-left: 14rem !important;
+        width: 19.7rem;
+        height: 30.8rem;
+    }
+    .card-img-top{
+        height: 19.5rem !important;
+    }
+    .row {
+        @include line-title(
+            $class-name: ".skills-title",
+            $right: 15%,
+            $left: 15%,
+            $bg-color: $color-white,
+            $width: 10rem
+        );
+        .skills-title {
+            font-family: $font-Ferdosi;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $color-white;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    .progress-lists{
+        margin-right: 2rem !important;
+    }
+    div{
+        .progress{
+            width: 20rem !important;
+        }
+    }
+    .skill-container {
+        .label-two {
+            @include label-two($percent: 79%);
+        }
+        .label-three {
+            @include label-two($percent: 73%);
+        }
+        .label-four {
+            @include label-two($percent: 82%);
+        }
+        .label-five {
+            @include label-two($percent: 83%);
+        }
+        .label-six {
+            @include label-two($percent: 78.3%);
+        }
+        .label-seven {
+            @include label-two($percent: 80%);
+        }
+        .label-2 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-3 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-4 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-5 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-6 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-7 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+    }
+    #work-samples{
+        height: 78rem;
+    }
+    .row {
+        @include line-title(
+            $class-name: ".work-samples-title",
+            $right: 18.7%,
+            $left: 18.7%,
+            $bg-color: $color-purple,
+            $width: 10rem
+        );
+        .work-samples-title {
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .work-samples {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        transition: 1s;
+        padding: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        transition: 0.9s;
+
+        &:hover {
+            &:after {
+                top: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            .after {
+                bottom: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            &:before {
+                left: 30px;
+                width: 83%;
+                transition: 0.9s;
+            }
+
+            .before {
+                right: 30px;
+                width: 83%;
+                transition: 0.9s;
+            }
+
+            &:before,
+            .before {
+                width: 83%;
+                transition: 0.9s;
+            }
+        }
+
+        &:after {
+            height: 80%;
+            width: 2px;
+            content: "";
+            top: 10%;
+            left: 30px;
+            transition: 0.9s;
+        }
+
+        .before,
+        .after,
+        &:before,
+        &:after {
+            background: #777;
+            position: absolute;
+            transition: 0.9s;
+        }
+
+        &:before {
+            height: 2px;
+            width: 80%;
+            content: "";
+            top: 0px;
+            left: 10%;
+            transition: 0.9s;
+        }
+
+        .before {
+            height: 2px;
+            width: 80%;
+            bottom: 0px;
+            right: 10%;
+            transition: 0.9s;
+        }
+
+        .after {
+            height: 80%;
+            width: 2px;
+            bottom: 10%;
+            right: 30px;
+            transition: 0.9s;
+        }
+    }
+    #my-experiences {
+        height: 51rem;
+    }
+    .row {
+        @include line-title($class-name:".my-experiences-title",$right:18.5%,$left:18.5%,$bg-color: $color-purple,$width:10rem);
+        .my-experiences-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .contact-us-form {
+        height: 40rem;
+    }
+    .row {
+        @include line-title($class-name:".contact-us-title",$right:19.5%,$left:19.5%,$bg-color: $color-purple,$width:10rem);
+        .contact-us-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    textarea{
+        width:150%;
+    }
+    .contact-us-detail{
+        margin-right: -2rem;
+    }
+
+}
+
+/////////// sm  ////////////
+@media only screen and(min-width:501px) and(max-width: 576px){
+
+    .name {
+        margin: 10rem;
+        margin-right: 3rem;
+        font-size: 2.7rem;
+    }
+    .subname {
+        margin: 16rem;
+        margin-right: 6rem;
+        font-size: 1.2rem;
+    }
+    .social-icons {
+        margin: 20rem;
+        margin-right: 6rem;
+    }
+    #about-me{
+        height: 54rem;
+    }
+    .about-me-img{
+        margin-top: -2rem !important;
+        margin: 0 auto;
+    }
+    div{
+        @include line-title($class-name:".esrafil-title",$right:7.5%,$left:8%,$bg-color: $color-purple,$width:7rem);
+        .esrafil-title{
+            font-family: $font-Ferdosi;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 1.5rem !important;
+            margin-bottom: 2rem !important;
+            margin-right: 7.8rem;
+            width: 19rem;
+        }
+    }
+    .esrafil-desc{
+        width: 39rem;
+    }
+    .esrafil-data{
+        width: 40rem;
+    }
+    .row {
+        @include line-title($class-name:".photographer-styles-title",$right:7%,$left:7%,$bg-color: $color-purple,$width:8rem);
+        .photographer-styles-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 4rem !important;
+        }
+    }
+    .card{
+        margin: 0 auto;
+        margin-left: 14rem !important;
+        width: 12.7rem;
+        height: 30.8rem;
+    }
+    .card-img-top{
+        height: 14.5rem !important;
+    }
+    .card-22{
+        margin-top: 0rem !important;
+    }
+    #photography-styles {
+        background-color: $color-background;
+        height: 115rem;
+    }
+    #skills{
+        height: 50rem;
+    }
+    .row {
+        @include line-title(
+            $class-name: ".skills-title",
+            $right: 8.5%,
+            $left: 8.5%,
+            $bg-color: $color-white,
+            $width: 8rem
+        );
+        .skills-title {
+            font-family: $font-Ferdosi;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $color-white;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    div{
+        .progress{
+            width: 27rem !important;
+        }
+    }
+    .skill-container {
+        .label-two {
+            @include label-two($percent: 72.5%);
+        }
+        .label-three {
+            @include label-two($percent: 68.2%);
+        }
+        .label-four {
+            @include label-two($percent: 73.8%);
+        }
+        .label-five {
+            @include label-two($percent: 74.3%);
+        }
+        .label-six {
+            @include label-two($percent: 72%);
+        }
+        .label-seven {
+            @include label-two($percent: 72.7%);
+        }
+        .label-2 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-3 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-4 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-5 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-6 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-7 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+    }
+    .row {
+        @include line-title(
+            $class-name: ".work-samples-title",
+            $right: 13.5%,
+            $left: 14%,
+            $bg-color: $color-purple,
+            $width: 8rem
+        );
+        .work-samples-title {
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .work-samples {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        transition: 1s;
+        padding: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        transition: 0.9s;
+
+        &:hover {
+            &:after {
+                top: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            .after {
+                bottom: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            &:before {
+                left: 30px;
+                width: 77%;
+                transition: 0.9s;
+            }
+
+            .before {
+                right: 30px;
+                width: 77%;
+                transition: 0.9s;
+            }
+
+            &:before,
+            .before {
+                width: 77%;
+                transition: 0.9s;
+            }
+        }
+
+        &:after {
+            height: 80%;
+            width: 2px;
+            content: "";
+            top: 10%;
+            left: 30px;
+            transition: 0.9s;
+        }
+
+        .before,
+        .after,
+        &:before,
+        &:after {
+            background: #777;
+            position: absolute;
+            transition: 0.9s;
+        }
+
+        &:before {
+            height: 2px;
+            width: 80%;
+            content: "";
+            top: 0px;
+            left: 10%;
+            transition: 0.9s;
+        }
+
+        .before {
+            height: 2px;
+            width: 80%;
+            bottom: 0px;
+            right: 10%;
+            transition: 0.9s;
+        }
+
+        .after {
+            height: 80%;
+            width: 2px;
+            bottom: 10%;
+            right: 30px;
+            transition: 0.9s;
+        }
+    }
+    .work-samples-img{
+        width: 10rem;
+    }
+    #work-samples{
+        height: 76rem;
+    }
+    #my-experiences {
+        height: 73.5rem;
+    }
+    .row {
+        @include line-title($class-name:".my-experiences-title",$right:13%,$left:13%,$bg-color: $color-purple,$width:8rem);
+        .my-experiences-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .my-experiences-detail{
+        margin-right: -2rem;
+    }
+    .my-experiences-detail-width{
+        width: 31rem;
+    }
+    .row {
+        @include line-title($class-name:".contact-us-title",$right:14%,$left:14%,$bg-color: $color-purple,$width:8rem);
+        .contact-us-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .contact-us-detail{
+        display: none;
+    }
+    .contact-us-form {
+        height: 41rem;
+    }
+    textarea{
+        width: 27.4rem;
+    }
+}
+
+/////////// xs  ////////////
+@media only screen and (max-width: 500px) {
+
+    .name {
+        margin: 10rem;
+        margin-right: 3rem;
+        font-size: 2rem;
+    }
+    .subname {
+        margin: 15rem;
+        margin-right: 5rem;
+        font-size: 1rem;
+    }
+    .social-icons {
+        margin: 19.5rem;
+        margin-right: 3.5rem;
+    }
+    #about-me {
+        height: 55rem;
+    }
+    .about-me-img {
+        margin: 0 auto;
+    }
+    div {
+        @include line-title(
+            $class-name: ".esrafil-title",
+            $right: 11.5%,
+            $left: 9%,
+            $bg-color: $color-purple,
+            $width: 5rem
+        );
+        .esrafil-title {
+            font-family: $font-Ferdosi;
+            font-size: 1.7rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 1rem !important;
+            margin-bottom: 2rem !important;
+            margin-right: 8rem !important;
+            width: 15rem;
+        }
+    }
+    .esrafil-desc {
+        width: 33rem;
+    }
+    .esrafil-desc-sub {
+        width: 30rem;
+    }
+    .esrafil-list {
+        width: 20rem;
+    }
+    .esrafil-data-2 {
+        li {
+            margin-right: .3rem !important;
+        }
+    }
+    .row {
+        @include line-title(
+            $class-name: ".photographer-styles-title",
+            $right: 3%,
+            $left: 3%,
+            $bg-color: $color-purple,
+            $width: 7rem
+        );
+        .photographer-styles-title {
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 2.5rem !important;
+        }
+    }
+    .card {
+        img {
+            width: 17rem;
+            height: 17rem;
+        }
+        margin-right: 3.9rem !important;
+        width: 17rem;
+        height: 27rem;
+        .card-title {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        .card-text {
+            font-size: 0.8rem;
+            margin-top: 0;
+        }
+    }
+    .card-22 {
+        margin-top: 0rem !important;
+    }
+    #photography-styles {
+        height: 195rem;
+    }
+    #skills {
+        height: 50rem;
+    }
+    .row {
+        @include line-title(
+            $class-name: ".skills-title",
+            $right: 5.5%,
+            $left: 5.5%,
+            $bg-color: $color-white,
+            $width: 7rem
+        );
+        .skills-title {
+            font-family: $font-Ferdosi;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $color-white;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    .skill-container {
+        .label-two {
+            @include label-two($percent: 68.5%);
+        }
+        .label-three {
+            @include label-two($percent: 64.5%);
+        }
+        .label-four {
+            @include label-two($percent: 70.5%);
+        }
+        .label-five {
+            @include label-two($percent: 71.4%);
+        }
+        .label-six {
+            @include label-two($percent: 68.6%);
+        }
+        .label-seven {
+            @include label-two($percent: 69.2%);
+        }
+        .label-2 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-3 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-4 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-5 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-6 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+        .label-7 {
+            @include label-2($left: 10.7%, $top: 8%);
+        }
+    }
+    div{
+        .progress{
+            width: 23rem !important;
+        }
+    }
+    .row {
+        @include line-title(
+            $class-name: ".work-samples-title",
+            $right: 12%,
+            $left: 12%,
+            $bg-color: $color-purple,
+            $width: 7rem
+        );
+        .work-samples-title {
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    #work-samples{
+        height: 141.5rem;
+    }
+    .work-samples {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        transition: 1s;
+        padding: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        transition: 0.9s;
+
+        &:hover {
+            &:after {
+                top: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            .after {
+                bottom: 0;
+                height: 100%;
+                transition: 0.9s;
+            }
+
+            &:before {
+                left: 30px;
+                width: 87.5%;
+                transition: 0.9s;
+            }
+
+            .before {
+                right: 30px;
+                width: 87.5%;
+                transition: 0.9s;
+            }
+
+            &:before,
+            .before {
+                width: 87.5%;
+                transition: 0.9s;
+            }
+        }
+
+        &:after {
+            height: 80%;
+            width: 2px;
+            content: "";
+            top: 10%;
+            left: 30px;
+            transition: 0.9s;
+        }
+
+        .before,
+        .after,
+        &:before,
+        &:after {
+            background: #777;
+            position: absolute;
+            transition: 0.9s;
+        }
+
+        &:before {
+            height: 2px;
+            width: 80%;
+            content: "";
+            top: 0px;
+            left: 10%;
+            transition: 0.9s;
+        }
+
+        .before {
+            height: 2px;
+            width: 80%;
+            bottom: 0px;
+            right: 10%;
+            transition: 0.9s;
+        }
+
+        .after {
+            height: 80%;
+            width: 2px;
+            bottom: 10%;
+            right: 30px;
+            transition: 0.9s;
+        }
+    }
+    .work-samples-img{
+        width: 20rem;
+    }
+    #my-experiences {
+        height: 74rem;
+    }
+    .row {
+        @include line-title($class-name:".my-experiences-title",$right:10.5%,$left:10.5%,$bg-color: $color-purple,$width:7rem);
+        .my-experiences-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    .my-experiences-detail-width{
+        width: 26rem;
+    }
+    .my-experiences-detail{
+        margin-right: -2rem;
+    }
+    .contact-us-form {
+        height: 42rem;
+    }
+    .row {
+        @include line-title($class-name:".contact-us-title",$right:12%,$left:12%,$bg-color: $color-purple,$width:7rem);
+        .contact-us-title{
+            font-family: $font-Ferdosi;
+            letter-spacing: 2px;
+            font-weight: 300;
+            text-shadow: -1px 1px 6px #02050167;
+            margin-top: 3.5rem !important;
+        }
+    }
+    textarea{
+        width: 20rem;
+    }
+    .contact-us-detail{
+        margin-right: -5rem;
+        display: none;
+    }
+
+
+}

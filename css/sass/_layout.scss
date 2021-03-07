@@ -1,0 +1,326 @@
+/////////  Header  ///////////////////////
+/////////  Navbar  ///////////////////////
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    i {
+        width: 4rem;
+        cursor: default;
+        font-size: 1.8rem;
+        font-weight: 650;
+        color: $color-purple2;
+        font-family: "pacifico";
+        text-shadow: 5px 10px 15px #8d13687e;
+    }
+}
+
+.nav-link:hover {
+    color: $color-info !important;
+}
+
+nav li {
+    font-family: $font-Ferdosi;
+    a {
+        color: $color-purple;
+        font-weight: 900;
+    }
+}
+
+b {
+    color: $color-info;
+}
+
+.collapse {
+    margin-right: 2rem;
+}
+
+nav {
+    position: absolute;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: all 0.7s;
+}
+
+.scrollClass {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    transition: all 0.7s !important;
+
+    li a {
+        color: $color-info;
+    }
+    .logo {
+        color: $color-info;
+        text-shadow: none !important;
+    }
+    -webkit-box-shadow: .1px 1px 7px black;
+    box-shadow: .1px 1px 7px black;
+}
+
+.bounce-in-left {
+    -webkit-animation: bounce-in-left 1.5s both;
+    animation: bounce-in-left 1.5s both;
+}
+
+/////////  Title  ///////////////////////
+.name {
+    margin: 13rem;
+    margin-right: 20rem;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-family: $font-Ferdosi;
+    color: $color-purple2;
+    text-shadow: -5px 4px 7px #202020;
+}
+
+.subname {
+    margin: 20rem;
+    margin-right: 25rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 15rem;
+    font-family: $font-Ferdosi;
+    color: $color-purple2;
+    text-shadow: -5px 4px 7px #202020;
+}
+
+/////////  Background-main  ///////////////////////
+.bg-img {
+    background-image: linear-gradient(rgba(199, 168, 151, 0.3)), url("../assets/img/bg.jpg") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100% !important;
+    height: 100% !important;
+    height: 100vh;
+}
+
+/////////  Main  ///////////////////////
+/////////  About-me  ///////////////////////
+#about-me {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about-me-img {
+    height: 30rem;
+    width: 100%;
+}
+
+.about-me-disc {
+    height: 30rem;
+    width: 100%;
+}
+
+/////////  Photography-Styles  ///////////////////////
+#photography-styles {
+    background-color: $color-background;
+    height: 91rem;
+}
+
+.photographer-styles-card {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+///////// My-Skills  ///////////////////////
+#skills {
+    background-image: url("../../assets/img/img2.jpg") !important;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 32rem;
+}
+
+.row {
+    @include line-title($class-name: ".skills-title", $right: 28%, $left: 28%, $bg-color: $color-white,$width:10rem);
+    .skills-title {
+        font-family: $font-Ferdosi;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: $color-white;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: 3.5rem !important;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+/////////  Work-Samples  ///////////////////////
+#work-samples {
+    height: 57rem;
+}
+.work-samples-img {
+    margin-top: 1rem;
+    width: 16rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+.work-samples-cards {
+    margin-top: 3rem !important;
+}
+
+.work-samples-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-family: $font-Ferdosi;
+}
+
+.work-samples {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    transition: 1s;
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    transition: 0.9s;
+
+    &:hover {
+        &:after {
+            top: 0;
+            height: 100%;
+            transition: 0.9s;
+        }
+
+        .after {
+            bottom: 0;
+            height: 100%;
+            transition: 0.9s;
+        }
+
+        &:before {
+            left: 30px;
+            width: 84.7%;
+            transition: 0.9s;
+        }
+
+        .before {
+            right: 30px;
+            width: 84.7%;
+            transition: 0.9s;
+        }
+
+        &:before,
+        .before {
+            width: 84.7%;
+            transition: 0.9s;
+        }
+    }
+
+    &:after {
+        height: 80%;
+        width: 2px;
+        content: "";
+        top: 10%;
+        left: 30px;
+        transition: 0.9s;
+    }
+
+    .before,
+    .after,
+    &:before,
+    &:after {
+        background: #777;
+        position: absolute;
+        transition: 0.9s;
+    }
+
+    &:before {
+        height: 2px;
+        width: 80%;
+        content: "";
+        top: 0px;
+        left: 10%;
+        transition: 0.9s;
+    }
+
+    .before {
+        height: 2px;
+        width: 80%;
+        bottom: 0px;
+        right: 10%;
+        transition: 0.9s;
+    }
+
+    .after {
+        height: 80%;
+        width: 2px;
+        bottom: 10%;
+        right: 30px;
+        transition: 0.9s;
+    }
+}
+
+/////////  My-Experiences  ///////////////////////
+#my-experiences {
+    height: 44rem;
+    background-color: $color-background;
+}
+
+.my-experiences-disc {
+    padding-right: 5rem !important;
+    margin-top: 0.5rem !important;
+}
+
+.my-experiences-detail {
+    font-family: $font-Ferdosi;
+    margin-top: 3rem;
+}
+
+.my-experiences-detail-width {
+    width: 80%;
+}
+
+/////////  Footer  ///////////////////////
+/////////  Contact-us  ///////////////////
+.contact-us-form {
+    margin-right: 4rem !important;
+    height: 35rem;
+}
+
+.contact-us-detail {
+    margin-top: 2.5rem !important;
+    padding-right: 8rem !important;
+}
+
+.all-right {
+    height: 5rem !important;
+}
+
+/////////  Form  ///////////////////
+.input-field.error {
+    input {
+        border-color: red;
+    }
+    textarea {
+        border-color: red;
+    }
+}
+
+.input-field.success {
+    input {
+        border-color: green;
+    }
+    textarea {
+        border-color: green;
+    }
+}
+
+
+
+
+
+

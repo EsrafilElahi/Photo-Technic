@@ -1,0 +1,22 @@
+export default {
+  strings: [],
+  speed: 100,
+  cursor: true,
+  cursorChar: "|",
+  cursorSpeed: 1000,
+  deleteSpeed: null,
+  lifeLike: true,
+  breakLines: true,
+  startDelay: 250,
+  startDelete: false,
+  nextStringDelay: 750,
+  loop: false,
+  loopDelay: 750,
+  html: true,
+  waitUntilVisible: false,
+  beforeString: () => {},
+  afterString: () => {},
+  beforeStep: () => {},
+  afterStep: () => {},
+  afterComplete: () => {}
+};

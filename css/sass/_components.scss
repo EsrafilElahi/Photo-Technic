@@ -1,0 +1,348 @@
+@use './base' as *;
+@import './base';
+
+/////////  Icons  ///////////////////////
+.social-icons{
+    list-style: none !important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 24.5rem;
+    li{
+        border: 1px solid $color-purple;
+        width: 2.5rem;
+        height: 2.1rem;
+        margin-left: .4rem;
+        &:hover{
+            background-color: $color-Hover;
+            transition: ease-in .1s;
+        }
+        a{
+            i{
+                color: $color-purple;
+                padding-right: .7rem;
+                padding-top: .5rem;
+            }
+        }
+    }
+}
+
+/////////  About-me  ///////////////////////
+div{
+    @include line-title($class-name:".esrafil-title",$right:41%,$left:7%,$bg-color: $color-purple,$width:10rem);
+    .esrafil-title{
+        font-family: $font-Ferdosi;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: .5rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+.esrafil-img{
+    height: 25rem;
+    width: 20rem;
+    margin-top: 2.6rem;
+    -webkit-box-shadow: -2px 2px 30px 1px #5f026d54;
+    box-shadow: -2px 2px 30px 1px #5f026d48;
+}
+
+.esrafil-desc{
+    font-family: $font-Ferdosi;
+    font-weight: bold;
+    line-height: 35px;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+    margin-top: 1rem !important;
+}
+
+.esrafil-desc-sub{
+    font-family: $font-Ferdosi;
+    font-weight: bold;
+    line-height: 35px;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+}
+
+// .esrafil-data-1 h6{
+//     font-family: $font-Ferdosi;
+//     font-weight: bold;
+//     line-height: 2rem;
+//     padding-left: 3.5rem;
+//     padding-right: 2rem;
+// }
+
+.esrafil-list{
+    list-style: none;
+    font-family: $font-Ferdosi;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+}
+
+.download-resume{
+    @include btns;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    a{
+        color: $color-purple;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    &:hover{
+        background-color: $color-purple;
+        a{color: $color-white;}
+    }
+}
+
+/////////  Photographer-Styles  ///////////////////////
+.row {
+    @include line-title($class-name:".photographer-styles-title",$right:25%,$left:25%,$bg-color: $color-purple,$width:10rem);
+    .photographer-styles-title{
+        font-family: $font-Ferdosi;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: 4rem !important;
+    }
+}
+
+.col{
+    margin-top: 4rem !important;
+}
+
+.card {
+    width: 22rem;
+    height: 35rem;
+    -webkit-box-shadow: -2px 2px 30px 1px #5f026d54;
+    box-shadow: -2px 2px 30px 1px #5f026d48;
+    h5{
+        font-family: $font-Ferdosi;
+        font-weight: 100;
+    }
+    p{
+        font-family: $font-Ferdosi;
+        line-height: 1.7rem !important;
+    }
+}
+
+.card-img-top{
+    height: 22rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+/////////  My-Skills  ///////////////////////
+.skills-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.815);
+}
+
+div{
+    .progress{
+        width: 29rem !important;
+        margin-left: 10%;
+        border-radius: 5rem;
+        margin-bottom: -2rem;
+    }
+    .progress-bar{
+        border-radius: 5rem;
+    }
+}
+
+.skill-container{
+    label{
+        direction: ltr;
+        top: -3px !important;
+        font-weight: 500 !important;
+        font-family: $font-Ferdosi;
+    }
+}
+
+.progress-lists{
+    margin-top: 2rem !important;
+}
+
+.skill-container{
+    .label-two{@include label-two($percent:73.5%)}
+    .label-three{@include label-two($percent:69.8%)}
+    .label-four{@include label-two($percent:74.5%)}
+    .label-five{@include label-two($percent:75.8%)}
+    .label-six{@include label-two($percent:73%)}
+    .label-seven{@include label-two($percent:73.6%)}
+    .label-2{@include label-2($left:10.7%,$top:8%)}
+    .label-3{@include label-2($left:10.7%,$top:8%)}
+    .label-4{@include label-2($left:10.7%,$top:8%)}
+    .label-5{@include label-2($left:10.7%,$top:8%)}
+    .label-6{@include label-2($left:10.7%,$top:8%)}
+    .label-7{@include label-2($left:10.7%,$top:8%)}
+}
+
+/////////  Work-samples  ///////////////////////
+.row {
+    @include line-title($class-name:".work-samples-title",$right:29%,$left:29%,$bg-color: $color-purple,$width:10rem);
+    .work-samples-title{
+        font-family: $font-Ferdosi;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: 3.5rem !important;
+    }
+}
+
+/////////  My-experiences  ////////////////////
+.row {
+    @include line-title($class-name:".my-experiences-title",$right:29%,$left:29%,$bg-color: $color-purple,$width:10rem);
+    .my-experiences-title{
+        font-family: $font-Ferdosi;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: 3.5rem !important;
+    }
+}
+
+/////////  Contact-Us  ///////////////////////
+.row {
+    @include line-title($class-name:".contact-us-title",$right:29%,$left:29%,$bg-color: $color-purple,$width:10rem);
+    .contact-us-title{
+        font-family: $font-Ferdosi;
+        letter-spacing: 2px;
+        font-weight: 300;
+        text-shadow: -1px 1px 6px #02050167;
+        margin-top: 3.5rem !important;
+    }
+}
+
+.input-field {
+    position: relative;
+    width: 15.63rem;
+    height: 2.75rem;
+    line-height: 2.38rem;
+}
+
+label {
+    direction: rtl;
+    position: absolute;
+    font-weight: 300;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $color-form-field;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 0;
+    border-bottom: 1.5px solid $color-form-field;
+    box-shadow: none;
+    color: #111;
+}
+
+input:focus,
+input:valid {
+  border-color: $color-info;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 0.88rem;
+    top: -1.5rem;
+    color: $color-info;
+    border-color: $color-info !important;
+}
+
+textarea {
+    width: 34.5rem;
+    height: 15rem;
+    border: 0;
+    border-left: 1px solid $color-form-field;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $color-form-field;
+    box-shadow: none;
+    color: #111;
+    resize: none !important;
+}
+textarea:invalid {
+    outline: 0;
+}
+textarea:focus,
+textarea:valid {
+    border-color: $color-info;
+}
+textarea:focus~label,
+textarea:valid~label {
+    font-size: 0.88rem;
+    top: -1.5rem;
+    color: $color-info;
+}
+  
+.submit-btn{
+    background-color: rgba($color: $color-info, $alpha: 0.6) !important;
+    width: 8rem !important;
+    color: black !important;
+    transition: all 0.3s;
+    margin-top: 14.5rem;
+    right: 4.8rem;
+    &:hover{
+        background-color: rgba($color: $color-info, $alpha: 1.0) !important;
+    }
+}
+
+.contact-us-info{
+    display: table;
+    font-family: $font-Ferdosi;
+    line-height: 1rem;
+    margin-top: 2rem !important;
+    i{
+        color: $color-info !important;
+        font-size: 1.5rem !important;
+    }
+    h2{
+    margin-top: 0.13rem;
+    margin-bottom: 0.38rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.19rem;
+    }
+    p{
+    line-height: 1.31rem;
+    letter-spacing: 0.13rem;
+    font-size: 1rem;
+    color: #777;
+    }
+}
+
+.all-right{
+    h4{
+        font-family: $font-Ferdosi;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9px !important;
+    }
+}
+// form{
+//     margin-right: -11rem;
+//     textarea{
+//         width: 40rem;
+//     }
+// }

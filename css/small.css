@@ -1,0 +1,26 @@
+
+
+@media (max-width: 1199.98px) {
+    
+    .name{
+        margin: 8rem;
+        margin-right: 15rem;
+        visibility: hidden !important;
+        display: none;
+    }
+    .subname{
+        margin: 15rem;
+        margin-right: 10rem;
+    }
+    .social-icons{
+        margin: 19.5rem;
+    }
+    .about-me-img{
+        margin-right: 1rem;
+    }
+    .about-me-disc{
+        width: 64.666667% !important;
+    }
+   
+   
+}

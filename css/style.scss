@@ -1,0 +1,44 @@
+/*********************************************************
+
+    Template Name:  Photography HTML Template
+    Author: Esrafil Elahi
+    Version: 1.0
+    Design and Developed by: Esrafil Elahi
+
+    NB: This is the main stylesheet of this theme.
+
+***********************************************************/
+
+/*Table of Content
+
+header{ 
+    nav
+    bg-img
+}
+
+main{ 
+    about-me
+    photography-styles
+    skills
+    work-smaples
+    my-experiences
+}
+
+footer{
+    contact-us
+}
+
+*/
+
+
+@import './sass/base';
+@import './sass/layout';
+@import './sass/components';
+@import './sass/responsive';
+
+
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
