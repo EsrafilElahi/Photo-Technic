@@ -17,6 +17,11 @@ body {
     }
 }
 
+.navbar-toggler-icon{
+    color: $color-white;
+    font-family: "pacifico";
+}
+
 .nav-link:hover {
     color: $color-info !important;
 }

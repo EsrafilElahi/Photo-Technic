@@ -166,6 +166,11 @@ body {
   text-shadow: 5px 10px 15px #8d13687e;
 }
 
+.navbar-toggler-icon {
+  color: #e6e7dc;
+  font-family: "pacifico";
+}
+
 .nav-link:hover {
   color: #45b2d3 !important;
 }
@@ -1403,6 +1408,9 @@ textarea:valid ~ label {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
   .name {
     margin: 10rem;
     margin-right: 5.5rem;
@@ -1758,6 +1766,9 @@ textarea:valid ~ label {
 }
 
 @media only screen and (min-width: 501px) and (max-width: 576px) {
+  .navbar-brand {
+    display: none;
+  }
   .name {
     margin: 10rem;
     margin-right: 3rem;
@@ -2111,6 +2122,9 @@ textarea:valid ~ label {
 }
 
 @media only screen and (max-width: 500px) {
+  .navbar-brand {
+    display: none;
+  }
   .name {
     margin: 10rem;
     margin-right: 3rem;
