@@ -8,7 +8,6 @@ new TypeIt('.subname', {
   loopSpeed:30000
 }).go();
 
-
 // Navbar scroll-down
 window.onscroll = function() {scrollfunction()};
 function scrollfunction() {
@@ -18,7 +17,6 @@ function scrollfunction() {
     document.getElementsByClassName('navbar')[0].classList.remove('scrollClass');
   }
 }
-
 
 // title animation
 window.onload = function() {onloadFunction()}

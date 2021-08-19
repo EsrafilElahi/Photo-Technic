@@ -19,7 +19,6 @@ $color-form-field: #a7a6a6;
 $font-Ferdosi: Ferdosi;
 $font-Pacifico: Pacifico;
 
-
 @font-face{
     font-family: Ferdosi;
     src: url('../../assets/font/IRFerdosi.ttf');
@@ -34,6 +33,7 @@ $font-Pacifico: Pacifico;
     font-family: Pacifico;
     src: url('../../assets/font/Pacifico-Regular.ttf');
 }
+
 
 /////////  Mixins  ///////////////////////
 @mixin FlexBox($jc,$ai) {
